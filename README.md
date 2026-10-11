@@ -232,7 +232,7 @@ The analysis includes:
 
 ```text
 ├── README.md
-└── EDA_Course_Project_23BDS0143_Males_Dataset_Phase3_PCA.ipynb
+└── EDA_Course_Project_23BDS0143_Males_Dataset.ipynb
 ```
 
 ---
