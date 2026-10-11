@@ -11,7 +11,7 @@
 
 ## Project Description
 
-This repository contains the **Phase 1 and Phase 2 Exploratory Data Analysis (EDA)** course project completed using **Google Colab** and **Python**.
+This repository contains the **Phase 1, Phase 2, and Phase 3 Exploratory Data Analysis (EDA)** course project completed using **Google Colab** and **Python**.
 
 The project demonstrates data preprocessing, statistical analysis, data cleaning, transformation, visualization, and clustering techniques on the **Males.csv** dataset.
 
@@ -47,6 +47,16 @@ The project demonstrates data preprocessing, statistical analysis, data cleaning
 * ✔ 3D Statistical Analysis
 * ✔ K-Means Clustering
 * ✔ Hierarchical Clustering
+
+### Phase 3
+
+* ✔ Principal Component Analysis (PCA)
+* ✔ Standardization of selected numerical features
+* ✔ Explained variance and cumulative explained variance
+* ✔ Scree plot and cumulative variance plot
+* ✔ Principal component loadings
+* ✔ PC1 vs PC2 visualization
+* ✔ Number of components required to retain at least 90% variance
 
 ---
 
@@ -127,6 +137,29 @@ The analysis includes:
 
 ---
 
+## Phase 3 Analysis - Principal Component Analysis (PCA)
+
+PCA is performed on the existing cleaned `df` using the numerical features `year`, `school`, `exper`, and `wage`. Identifier columns and label-encoded categorical columns are excluded from the PCA feature set. The selected features are standardized before PCA so that differences in scale do not dominate the result.
+
+The analysis includes:
+
+* StandardScaler preprocessing
+* Principal component transformation
+* Explained variance ratio for each component
+* Cumulative explained variance and the 90% threshold
+* Scree plot
+* Cumulative explained variance plot
+* Principal component loadings table
+* PC1 vs PC2 scatter plot
+
+### Phase 3 Visualizations
+
+* PCA Scree Plot
+* Cumulative Explained Variance Plot
+* PC1 vs PC2 Scatter Plot
+
+---
+
 ## Libraries Used
 
 * Pandas
@@ -199,7 +232,7 @@ The analysis includes:
 
 ```text
 ├── README.md
-└── EDA_Course_Project_23BDS0143_Males_Dataset.ipynb
+└── EDA_Course_Project_23BDS0143_Males_Dataset_Phase3_PCA.ipynb
 ```
 
 ---
@@ -208,7 +241,7 @@ The analysis includes:
 
 1. Open the notebook in **Google Colab**.
 2. Run the notebook cells sequentially.
-3. Execute the Phase 1 and Phase 2 analysis.
+3. Execute the Phase 1, Phase 2, and Phase 3 analysis.
 4. Review the generated statistical results and visualizations.
 5. Save the updated notebook to the **same GitHub repository**.
 
@@ -228,8 +261,10 @@ The project provides a complete Exploratory Data Analysis workflow covering:
 * K-Means clustering
 * Hierarchical clustering
 * Cluster evaluation using silhouette scores
+* PCA-based dimensionality reduction
+* Explained variance and component loading analysis
 
-The Phase 2 extension provides additional statistical and clustering analysis of relationships among **schooling, experience, wage, and other attributes** in the dataset.
+The Phase 2 extension provides additional statistical and clustering analysis of relationships among **schooling, experience, wage, and other attributes** in the dataset. Phase 3 applies PCA to standardized `year`, `school`, `exper`, and `wage` features to summarize variance and visualize observations in principal-component space.
 
 ---
 
